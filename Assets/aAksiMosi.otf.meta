@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 6e6afe54bba0c5a4e95430c22d5c53d0
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - a Aksi Mosi
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: dde979494ffd0e746aee831c5832ab9a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
