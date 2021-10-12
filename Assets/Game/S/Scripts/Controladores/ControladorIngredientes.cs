@@ -11,13 +11,18 @@ namespace Game.S.Scripts.Controladores
 
         #region Variáveis Públicas
 
-        public Ingrediente IngredienteInstanciado {get; set;}
+        public bool EncontrouIngredienteInstanciado {get; private set;}
+        public bool PodeInstanciarIngrediente {get; private set;}
+        public bool PodeGerarPerfect {get; set;}
+        public Ingrediente IngredienteInstanciado {get; private set;}
+        public Ingrediente IngredienteAnterior {get; set;}
 
         #endregion
         
         #region Variáveis Privadas
         
         [SerializeField] [Tooltip("Tempo de esperar para gerar um novo ingrediente.")] private float timer;
+        [SerializeField] [Tooltip("O offset de distância para gerar um perfect.")] private float offsetPerfect;
         [SerializeField] [Tooltip("Referência para o ingrediente que será instânciado.")] private Ingrediente[] ingredientes;
         [SerializeField] [Tooltip("Referência para o pai do objeto spawnado.")] private Pendulo pendulo;
         [SerializeField] [Tooltip("Posição que o objeto será instânciado.")] private Transform posicaoSpawn;
@@ -25,7 +30,7 @@ namespace Game.S.Scripts.Controladores
 
         private bool _encontrouPendulo, _encontrouPosicaoSpawn, _encontrouPainel;
         private bool _encontrouIngredientes;
-        
+
         #endregion
         
         #endregion
@@ -38,6 +43,7 @@ namespace Game.S.Scripts.Controladores
 
         private void Start()
         {
+            EncontrouIngredienteInstanciado = false;
             _encontrouPendulo = pendulo != null;
             _encontrouPosicaoSpawn = posicaoSpawn != null;
             _encontrouPainel = painel != null;
@@ -61,10 +67,21 @@ namespace Game.S.Scripts.Controladores
         
         public void StartGerarIngredienteAposTempo()
         {
-            if (_encontrouIngredientes)
-                StartCoroutine(GerarIngredienteAposTempo());
+            if (!_encontrouIngredientes || !PodeInstanciarIngrediente) return;
+            PodeInstanciarIngrediente = false;
+            StartCoroutine(GerarIngredienteAposTempo());
+            EncontrouIngredienteInstanciado = !EncontrouIngredienteInstanciado || EncontrouIngredienteInstanciado;
         }
-        
+
+        public void DetectarPerfect()
+        {
+            var posicaoIngredienteAtual = IngredienteInstanciado.transform.position;
+            var posicaoIngredienteAnterior = IngredienteAnterior.transform.position;
+            var perfect = posicaoIngredienteAtual.x >= posicaoIngredienteAnterior.x - offsetPerfect && posicaoIngredienteAtual.x <= posicaoIngredienteAnterior.x + offsetPerfect;
+            
+            Debug.Log(perfect ? "Perfect" : "Not perfect");
+        }
+
         #endregion
         
         #region Métodos Privados
@@ -76,6 +93,9 @@ namespace Game.S.Scripts.Controladores
         }
         private void GerarIngrediente()
         {
+            if (EncontrouIngredienteInstanciado)
+                IngredienteAnterior = IngredienteInstanciado;
+            
             var rdnIngrediente = ingredientes[Random.Range(0, ingredientes.Length)];
             IngredienteInstanciado = _encontrouPendulo ? Instantiate(rdnIngrediente, pendulo.transform) : Instantiate(rdnIngrediente);
             
@@ -84,6 +104,8 @@ namespace Game.S.Scripts.Controladores
             
             if (_encontrouPainel)
                 painel.PodeGerarCorpoIngrediente = true;
+
+            PodeGerarPerfect = PodeInstanciarIngrediente = true;
         }
 
         #endregion
