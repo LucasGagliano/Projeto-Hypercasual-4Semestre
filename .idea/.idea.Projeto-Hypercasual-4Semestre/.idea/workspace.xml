@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cd96de0-68e8-44e2-9f64-99121cf342b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Projeto-Hypercasual-4Semestre/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projeto-Hypercasual-4Semestre/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorIngredientes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorIngredientes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/C/Cenas/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/C/Cenas/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Alface.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Alface.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Batata.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Batata.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Carne.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Carne.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Cebola.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Cebola.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Ovo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Ovo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Presunto.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Presunto.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Queijo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Queijo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Tomate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Tomate.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorIngredientes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorIngredientes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Ingrediente.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Ingrediente.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Alface.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Alface.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Batata.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Batata.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Cebola.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Cebola.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Presunto.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Presunto.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Queijo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Queijo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Tomate.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Tomate.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +65,6 @@
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Sistema/Timer.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/Scripts/CustomEditorControladorIngredientes.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorPendulo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Ingrediente.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/InputTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Inputing/InputTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Interfaces/Movimentos/Direcional.cs" />
@@ -64,13 +73,14 @@
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Prop.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Inputing/ControladorInput.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorCena.cs" />
-      <option value="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorIngredientes.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Pendulo.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorInput.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorCena.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorIngredientes.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorIngredientes.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Ingrediente.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorIngredientes.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zK95x1u2VAtE7m1tw1hOlUjX8l" />
@@ -120,7 +130,8 @@
       <option name="presentableId" value="Default" />
       <updated>1633885735790</updated>
       <workItem from="1633885740678" duration="18698000" />
-      <workItem from="1633966841023" duration="5412000" />
+      <workItem from="1633966841023" duration="6008000" />
+      <workItem from="1634052359040" duration="5766000" />
     </task>
     <servers />
   </component>

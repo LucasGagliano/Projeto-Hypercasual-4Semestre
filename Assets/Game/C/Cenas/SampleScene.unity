@@ -155,12 +155,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29ce2a9bfa5950a4899ac5b1a739d984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 2
+  timer: 1
+  offsetPerfect: 0.035
   ingredientes:
   - {fileID: 3947436023148752528, guid: 1828321fb03b9894b97fea1fb79327bf, type: 3}
   - {fileID: 8355342565799511703, guid: e2bfe15bdcbe19d4e93ee14f87396031, type: 3}
   - {fileID: 6811352636867281961, guid: 5dc01c905826e86428e03845281d51f5, type: 3}
-  - {fileID: 4694404899809670167, guid: 8c0d60b4b4eebf540bd9273d2a56d5e3, type: 3}
+  - {fileID: 2101619556284084720, guid: 0cf917b2523e4aa44864761959c2495b, type: 3}
   - {fileID: 2101619556284084720, guid: 0cf917b2523e4aa44864761959c2495b, type: 3}
   - {fileID: 4975236432126958037, guid: 2509528abbffd164f8287d5058424a72, type: 3}
   - {fileID: 321485352679035225, guid: 816176c93f74c5e47afe9a8319b743d6, type: 3}
@@ -717,7 +718,7 @@ GameObject:
   - component: {fileID: 1107629364}
   m_Layer: 0
   m_Name: _sprt_Pao
-  m_TagString: Untagged
+  m_TagString: Ingrediente
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1273,19 +1274,6 @@ MonoBehaviour:
         - m_Target: {fileID: 70423914}
           m_TargetAssemblyTypeName: Game.S.Scripts.Inputing.ControladorInput, Assembly-CSharp
           m_MethodName: Clicado
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 70423912}
-          m_TargetAssemblyTypeName: Game.S.Scripts.Controladores.ControladorIngredientes,
-            Assembly-CSharp
-          m_MethodName: StartGerarIngredienteAposTempo
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
