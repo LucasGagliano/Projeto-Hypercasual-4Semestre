@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4975236432126958037}
   m_Layer: 0
   m_Name: _pf_Presunto
-  m_TagString: Untagged
+  m_TagString: Ingrediente
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.2620409, y: 0.20985731}
+    oldSize: {x: 2.4631112, y: 0.22851129}
     newSize: {x: 2.2620409, y: 0.20985731}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

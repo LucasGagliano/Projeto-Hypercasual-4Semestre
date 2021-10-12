@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1833338676757151821}
   m_Layer: 0
   m_Name: _pf_Tomate
-  m_TagString: Untagged
+  m_TagString: Ingrediente
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,18 +97,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.002724789}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.3823671, y: 0.13959184}
+    oldSize: {x: 2.4837446, y: 0.14553192}
     newSize: {x: 2.3823671, y: 0.13959184}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3823671, y: 0.13959184}
+  m_Size: {x: 2.3823671, y: 0.15071918}
   m_EdgeRadius: 0
 --- !u!114 &1833338676757151821
 MonoBehaviour:
