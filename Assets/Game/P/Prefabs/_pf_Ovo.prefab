@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2101619556284084720}
   m_Layer: 0
   m_Name: _pf_Ovo
-  m_TagString: Untagged
+  m_TagString: Ingrediente
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

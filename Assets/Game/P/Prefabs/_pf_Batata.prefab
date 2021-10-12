@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8355342565799511703}
   m_Layer: 0
   m_Name: _pf_Batata
-  m_TagString: Untagged
+  m_TagString: Ingrediente
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.0158958, y: 0.33959183}
+    oldSize: {x: 2.4115942, y: 0.40625}
     newSize: {x: 2.0158958, y: 0.33959183}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
