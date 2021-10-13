@@ -11,8 +11,8 @@ namespace Editor.S.Scripts.CustomEditors
 
         #region Variáveis Privadas
 
-        private SerializedProperty _controladorIngredientes, _controladorCena;
-        private bool _encontrouControladorIngredientes, _encontrouControladoCena;
+        private SerializedProperty _controladorIngredientes, _controladorGameplay;
+        private bool _encontrouControladorIngredientes, _encontrouControladorGameplay;
 
         #endregion
 
@@ -29,8 +29,8 @@ namespace Editor.S.Scripts.CustomEditors
             if (_encontrouControladorIngredientes)
                 EditorGUILayout.PropertyField(_controladorIngredientes, new GUIContent("Controlador de ingredientes:"));
 
-            if (_encontrouControladoCena)
-                EditorGUILayout.PropertyField(_controladorCena, new GUIContent("Controlador de cena:"));
+            if (_encontrouControladorGameplay)
+                EditorGUILayout.PropertyField(_controladorGameplay, new GUIContent("Controlador de gameplay:"));
 
             serializedObject.ApplyModifiedProperties();
         }
@@ -42,10 +42,10 @@ namespace Editor.S.Scripts.CustomEditors
         private void OnEnable()
         {
             _controladorIngredientes = serializedObject.FindProperty("controladorIngredientes");
-            _controladorCena = serializedObject.FindProperty("controladoCena");
+            _controladorGameplay = serializedObject.FindProperty("controladorGameplay");
 
             _encontrouControladorIngredientes = _controladorIngredientes != null;
-            _encontrouControladoCena = _controladorCena != null;
+            _encontrouControladorGameplay = _controladorGameplay != null;
         }
 
         #endregion
