@@ -1,3 +1,5 @@
+using UnityEngine.Audio;
+
 namespace Game.S.Scripts.Objetos
 {
     using UnityEngine;
@@ -8,9 +10,13 @@ namespace Game.S.Scripts.Objetos
         #region Variáveis
 
         #region Variáveis Privadas
-        
-        private ControladorIngredientes _controladorIngredientes;
 
+        private AudioSource _som;
+        private ControladorIngredientes _controladorIngredientes;
+        private ControladorGameplay _controladorGameplay;
+
+        // Fazer checagem
+        
         #endregion
 
         #endregion
@@ -24,12 +30,19 @@ namespace Game.S.Scripts.Objetos
         private void Awake()
         {
             _controladorIngredientes = FindObjectOfType<ControladorIngredientes>();
+            _controladorGameplay = FindObjectOfType<ControladorGameplay>();
+            _som = GameObject.Find("Bater").GetComponent<AudioSource>();
         }
 
         private void OnCollisionEnter2D(Collision2D collision2D)
         {
+            if (collision2D.collider.CompareTag("Morrer"))
+                _controladorGameplay.GameOver();
+            
             if (!collision2D.collider.CompareTag("Ingrediente")) return;
 
+            _som.Play();
+            
             if (_controladorIngredientes.EncontrouIngredienteInstanciado && gameObject == _controladorIngredientes.IngredienteInstanciado.gameObject && _controladorIngredientes.PodeGerarPerfect)
             {
                 _controladorIngredientes.PodeGerarPerfect = false;
