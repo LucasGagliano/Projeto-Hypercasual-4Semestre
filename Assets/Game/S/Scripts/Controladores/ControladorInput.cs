@@ -15,7 +15,7 @@ namespace Game.S.Scripts.Controladores
         #region Variávies Privadas
 
         [SerializeField] [Tooltip("Referência para o controlador de ingredientes.")] private ControladorIngredientes controladorIngredientes;
-        [SerializeField] [Tooltip("Referência para o controlador de cena.")] private ControladorCena controladorCena;
+        [SerializeField] [Tooltip("Referência para o controlador de cena.")] private ControladorGameplay controladorGameplay;
         private bool _encontrouControladorIngredientes;
 
         #endregion
@@ -46,7 +46,7 @@ namespace Game.S.Scripts.Controladores
         {
             if (!PodeGerarCorpoIngrediente || !_encontrouControladorIngredientes) return;
             controladorIngredientes.IngredienteInstanciado.GerarCorpo();
-            controladorCena.SubirObjetos();
+            controladorGameplay.SubirObjetos();
             PodeGerarCorpoIngrediente = false;
         }
 

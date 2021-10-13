@@ -11,11 +11,12 @@ namespace Game.S.Scripts.Controladores
 
         #region Variáveis Públicas
 
+        public int Pontos {get; set;}
         public bool EncontrouIngredienteInstanciado {get; private set;}
         public bool PodeInstanciarIngrediente {get; private set;}
         public bool PodeGerarPerfect {get; set;}
         public Ingrediente IngredienteInstanciado {get; private set;}
-        public Ingrediente IngredienteAnterior {get; set;}
+        private Ingrediente _ingredienteAnterior;
 
         #endregion
         
@@ -28,8 +29,7 @@ namespace Game.S.Scripts.Controladores
         [SerializeField] [Tooltip("Posição que o objeto será instânciado.")] private Transform posicaoSpawn;
         [SerializeField] [Tooltip("Referência do painel de input.")] private ControladorInput painel;
 
-        private bool _encontrouPendulo, _encontrouPosicaoSpawn, _encontrouPainel;
-        private bool _encontrouIngredientes;
+        private bool _encontrouPendulo, _encontrouPosicaoSpawn, _encontrouPainel, _encontrouIngredientes;
 
         #endregion
         
@@ -68,6 +68,7 @@ namespace Game.S.Scripts.Controladores
         public void StartGerarIngredienteAposTempo()
         {
             if (!_encontrouIngredientes || !PodeInstanciarIngrediente) return;
+
             PodeInstanciarIngrediente = false;
             StartCoroutine(GerarIngredienteAposTempo());
             EncontrouIngredienteInstanciado = !EncontrouIngredienteInstanciado || EncontrouIngredienteInstanciado;
@@ -76,7 +77,7 @@ namespace Game.S.Scripts.Controladores
         public void DetectarPerfect()
         {
             var posicaoIngredienteAtual = IngredienteInstanciado.transform.position;
-            var posicaoIngredienteAnterior = IngredienteAnterior.transform.position;
+            var posicaoIngredienteAnterior = _ingredienteAnterior.transform.position;
             var perfect = posicaoIngredienteAtual.x >= posicaoIngredienteAnterior.x - offsetPerfect && posicaoIngredienteAtual.x <= posicaoIngredienteAnterior.x + offsetPerfect;
             
             Debug.Log(perfect ? "Perfect" : "Not perfect");
@@ -94,7 +95,7 @@ namespace Game.S.Scripts.Controladores
         private void GerarIngrediente()
         {
             if (EncontrouIngredienteInstanciado)
-                IngredienteAnterior = IngredienteInstanciado;
+                _ingredienteAnterior = IngredienteInstanciado;
             
             var rdnIngrediente = ingredientes[Random.Range(0, ingredientes.Length)];
             IngredienteInstanciado = _encontrouPendulo ? Instantiate(rdnIngrediente, pendulo.transform) : Instantiate(rdnIngrediente);
