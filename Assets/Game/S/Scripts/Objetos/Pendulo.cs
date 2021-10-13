@@ -1,8 +1,9 @@
 namespace Game.S.Scripts.Objetos
 {
+    using System.Collections;
     using UnityEngine;
     using Movimentacao;
-    
+
     [RequireComponent(typeof(Rigidbody2D))]
     public class Pendulo : MonoBehaviour
     {
@@ -32,6 +33,11 @@ namespace Game.S.Scripts.Objetos
             _mhs = gameObject.AddComponent<MHS>();
         }
 
+        private void Start()
+        {
+            StartCoroutine(Animar());
+        }
+
         private void Update()
         {
             _mhs.Acao(_rigidbody2D, anguloMaximo * Mathf.Sin(Time.time * velocidade));
@@ -40,7 +46,26 @@ namespace Game.S.Scripts.Objetos
         #endregion
     
         #endregion
-    
+
+        #region Métodos Personalizados
+
+        #region Métodos Privados
+
+        private IEnumerator Animar()
+        {
+            var diferenca = transform.position.y - Camera.main.ViewportToWorldPoint(Vector3.one).y;
+            for (var i = 0f; i < diferenca; i+= 0.05f)
+            {
+                transform.position += Vector3.down * 0.05f;
+                yield return new WaitForSeconds(0.015f);
+            }
+        }
+        
+
+        #endregion
+
+        #endregion
+        
         #endregion
     }
 }
