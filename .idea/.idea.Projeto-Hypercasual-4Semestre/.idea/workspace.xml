@@ -3,8 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="9cd96de0-68e8-44e2-9f64-99121cf342b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Projeto-Hypercasual-4Semestre/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projeto-Hypercasual-4Semestre/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorIngredientes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorIngredientes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/C/Cenas/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/C/Cenas/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Theme Loop #3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Casual Theme Loop #3.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorCena.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorGameplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorCena.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorGameplay.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ervilha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ervilha.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/A/Animators/_anmtr_Prato.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/A/Animators/_anmtr_Prato.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/C/Cenas/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/C/Cenas/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/C/Cenas/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/C/Cenas/SampleScene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Alface.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Alface.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Batata.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Batata.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Carne.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Carne.prefab" afterDir="false" />
@@ -13,15 +24,74 @@
       <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Presunto.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Presunto.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Queijo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Queijo.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Tomate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/P/Prefabs/_pf_Tomate.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorCena.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorGameplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorCena.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorGameplay.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorIngredientes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorIngredientes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Ingrediente.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Ingrediente.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Alface.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Alface.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Batata.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Batata.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Cebola.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Cebola.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Presunto.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Presunto.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Queijo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Queijo.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Tomate.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Tomate.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Pendulo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Pendulo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Alface.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Alface.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Batata.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Batata.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Carne.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Carne.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Cebola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Cebola.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Corda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Corda.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Mesa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Mesa.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Ovo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Ovo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Pao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Pao.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Prato.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Prato.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Presunto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Presunto.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Queijo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Queijo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Tomate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/S/Sprites/_sprt_Tomate.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Icon Music Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Icon Music Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Icon Music On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Icon Music On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Icon Pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Icon Pause.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Icon Points.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Icon Points.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Icon Sound Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Icon Sound Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Icon Sound On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Icon Sound On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu madeira safe mode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu madeira safe mode.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu madeira time rush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu madeira time rush.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu madeira titulo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu madeira titulo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/aAksiMosi.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/aAksiMosi.otf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/aAksiMosi.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/aAksiMosi.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/corda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/corda.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/madeira pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/madeira pause.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/nuvem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/nuvem.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/perfect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/perfect.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/tela de pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/tela de pause.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,22 +101,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Game/S/Scripts/Sistema/InformacoesGerais.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Pendulo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorInput.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorCena.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorGameplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/S/Scripts/Sistema/Timer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Projeto-Inter-4Semestre/Assets/Game/S/Scripts/Sistema/Misc.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Ingrediente.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorOpcoes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorCena.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorIcones.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Projeto-Inter-4Semestre/Assets/Game/S/Scripts/Controladores/Teste.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/83A38F53-97D9-4E36-A22E-FA3369C82390/a2/9094e8d8/Editor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Projeto-Inter-4Semestre/Assets/Game/S/Scripts/Sistema/Misc.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Ingrediente.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorGameplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorGameOver.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Movimentos.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Rotacionar.cs" />
-      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Teste.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/IMovimentos.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/MHS.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Desprender.cs" />
@@ -72,15 +156,26 @@
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Interfaces/Movimentos/DirecionalVertical.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Prop.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Inputing/ControladorInput.cs" />
-      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorCena.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Pendulo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorInput.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorCena.cs" />
-      <option value="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorIngredientes.cs" />
-      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Ingrediente.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/ICenas.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Teste.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Cenas/ListaCenas.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorIcones.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Sistema/InformacoesGerais.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorOpcoes.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/S/Scripts/CustomEditors/CustomEditorControladorGameplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorIngredientes.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorGameplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorGameOver.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Controladores/ControladorCena.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/S/Scripts/Objetos/Ingrediente.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zK95x1u2VAtE7m1tw1hOlUjX8l" />
@@ -131,7 +226,7 @@
       <updated>1633885735790</updated>
       <workItem from="1633885740678" duration="18698000" />
       <workItem from="1633966841023" duration="6008000" />
-      <workItem from="1634052359040" duration="5766000" />
+      <workItem from="1634052359040" duration="33237000" />
     </task>
     <servers />
   </component>
