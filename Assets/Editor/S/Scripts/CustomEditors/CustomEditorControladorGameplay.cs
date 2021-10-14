@@ -11,8 +11,8 @@ namespace Editor.S.Scripts.CustomEditors
 
         #region Variáveis Privadas
 
-        private SerializedProperty _pnlGamerover, _objetosParaSubir, _controladorIngredientes;
-        private bool _encontrouPnlGameover, _encontrouObjetosParaSubir, _encontrouControladorIngredientes;
+        private SerializedProperty _pnlGamerover, _objetosParaSubir, _controladorIngredientes, _offsetSubir;
+        private bool _encontrouPnlGameover, _encontrouObjetosParaSubir, _encontrouControladorIngredientes, _encontrouOffsetSubir;
         
         #endregion
 
@@ -35,6 +35,9 @@ namespace Editor.S.Scripts.CustomEditors
             if (_encontrouControladorIngredientes)
                 EditorGUILayout.PropertyField(_controladorIngredientes, new GUIContent("Controlador de ingredientes"));
 
+            if (_encontrouOffsetSubir)
+                EditorGUILayout.PropertyField(_offsetSubir, new GUIContent("Offset de translação:"));
+
             serializedObject.ApplyModifiedProperties();
         }
 
@@ -47,10 +50,12 @@ namespace Editor.S.Scripts.CustomEditors
             _pnlGamerover = serializedObject.FindProperty("pnlGameover");
             _objetosParaSubir = serializedObject.FindProperty("objetosParaSubir");
             _controladorIngredientes = serializedObject.FindProperty("controladorIngredientes");
+            _offsetSubir = serializedObject.FindProperty("offsetSubir");
 
             _encontrouPnlGameover = _pnlGamerover != null;
             _encontrouObjetosParaSubir = _objetosParaSubir != null;
             _encontrouControladorIngredientes = _controladorIngredientes != null;
+            _encontrouOffsetSubir = _offsetSubir != null;
         }
         
         #endregion
