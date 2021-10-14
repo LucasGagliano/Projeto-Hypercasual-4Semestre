@@ -1,39 +1,49 @@
-using Game.S.Scripts.Sistema;
-using UnityEngine;
-
-public class ControladorIcones : MonoBehaviour
+namespace Game.S.Scripts.Controladores
 {
-    [SerializeField] private GameObject[] botoesMusica;
-    [SerializeField] private GameObject[] botoesSons;
-    // fazer verificador dos dois acima
-    
-        
-    private void Start()
+    using System.Collections.Generic;
+    using Sistema;
+    using UnityEngine;
+
+    public class ControladorIcones : MonoBehaviour
     {
-        ConfiguracaoInicial();
-    }
-    private void ConfiguracaoInicial()
-    {
-        if (InformacoesGerais.MusicaMutada)
+        [SerializeField] private GameObject[] botoesMusica;
+        [SerializeField] private GameObject[] botoesSons;
+
+        private GameObject[][] _botoes;
+        private bool[] _encontrouBotoes;
+
+        private void Start()
         {
-            botoesMusica[0].SetActive(false);
-            botoesMusica[1].SetActive(true);
-        }
-        else
-        {
-            botoesMusica[0].SetActive(true);
-            botoesMusica[1].SetActive(false);
-        }
+            var tmp = 0;
             
-        if (InformacoesGerais.SomMutado)
-        {
-            botoesSons[0].SetActive(false);
-            botoesSons[1].SetActive(true);
+            _botoes = new[] {botoesMusica, botoesSons};
+            _encontrouBotoes = new bool[2];
+            
+            
+            for (var i = 0; i < _botoes.Length; i++)
+            {
+                for (var j = 0; j < 2; j++)
+                {
+                    if (_botoes[i][j] == null)
+                        tmp++;
+                }
+
+                if (tmp > 0)
+                    _encontrouBotoes[i] = false;
+
+                tmp = 0;
+            }
+
+            for (var i = 0; i < _botoes.Length; i++)
+                if (_encontrouBotoes[i])
+                    ConfiguracaoInicial(InformacoesGerais.SonsMutados[i], _botoes[i]);
         }
-        else
+        private void ConfiguracaoInicial(bool t, IReadOnlyList<GameObject> imagens)
         {
-            botoesSons[0].SetActive(true);
-            botoesSons[1].SetActive(false);
+            imagens[0].SetActive(!t);
+            imagens[1].SetActive(t);
         }
     }
 }
+
+

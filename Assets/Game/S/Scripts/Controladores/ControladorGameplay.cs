@@ -1,3 +1,5 @@
+using System;
+
 namespace Game.S.Scripts.Controladores
 {
     using UnityEngine;
@@ -11,6 +13,7 @@ namespace Game.S.Scripts.Controladores
         [SerializeField] [Tooltip("Referência para o painel de game over.")] private GameObject pnlGameover;
         [SerializeField] [Tooltip("Os objetos que sofreram um aumento em sua posição Y.")] private GameObject[] objetosParaSubir;
         [SerializeField] [Tooltip("Referência para o controlador de ingredientes.")] private ControladorIngredientes controladorIngredientes;
+        [SerializeField] private float offsetSubir;
 
         private bool _encontrouControladorIngredientes;
         private bool[] _encontrouObjetosParaSubir;
@@ -34,7 +37,7 @@ namespace Game.S.Scripts.Controladores
             for (var i = 0; i < objetosParaSubir.Length; i++)
                 _encontrouObjetosParaSubir[i] = objetosParaSubir[i] != null;
         }
-        
+
         #endregion
 
         #endregion
@@ -48,7 +51,7 @@ namespace Game.S.Scripts.Controladores
             if (!_encontrouControladorIngredientes) return;
             for (var i = 0; i < objetosParaSubir.Length; i++)
                 if (_encontrouObjetosParaSubir[i])
-                    objetosParaSubir[i].transform.Translate(0, controladorIngredientes.IngredienteInstanciado.GetComponent<BoxCollider2D>().size.y, 0);
+                    objetosParaSubir[i].transform.Translate(0, controladorIngredientes.IngredienteInstanciado.GetComponent<BoxCollider2D>().size.y - offsetSubir , 0);
         }
 
         public void AlterarEstadoDoJogo(int i)

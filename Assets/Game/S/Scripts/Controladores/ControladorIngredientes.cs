@@ -1,3 +1,5 @@
+using UnityEngine.UI;
+
 namespace Game.S.Scripts.Controladores
 {
     using System.Collections;
@@ -28,6 +30,7 @@ namespace Game.S.Scripts.Controladores
         [SerializeField] [Tooltip("Referência para o pai do objeto spawnado.")] private Pendulo pendulo;
         [SerializeField] [Tooltip("Posição que o objeto será instânciado.")] private Transform posicaoSpawn;
         [SerializeField] [Tooltip("Referência do painel de input.")] private ControladorInput painel;
+        [SerializeField] [Tooltip("Referência para a imagem de perfect")] private Image imgPerfect;
 
         private bool _encontrouPendulo, _encontrouPosicaoSpawn, _encontrouPainel, _encontrouIngredientes;
 
@@ -73,14 +76,29 @@ namespace Game.S.Scripts.Controladores
             StartCoroutine(GerarIngredienteAposTempo());
             EncontrouIngredienteInstanciado = !EncontrouIngredienteInstanciado || EncontrouIngredienteInstanciado;
         }
-
-        public void DetectarPerfect()
+        public IEnumerator DetectarPerfect()
         {
             var posicaoIngredienteAtual = IngredienteInstanciado.transform.position;
             var posicaoIngredienteAnterior = _ingredienteAnterior.transform.position;
             var perfect = posicaoIngredienteAtual.x >= posicaoIngredienteAnterior.x - offsetPerfect && posicaoIngredienteAtual.x <= posicaoIngredienteAnterior.x + offsetPerfect;
             
             Debug.Log(perfect ? "Perfect" : "Not perfect");
+
+            if (perfect)
+            {
+                var imgPos = imgPerfect.transform.position;
+                var imgColor = imgPerfect.color;
+                
+                imgPerfect.gameObject.SetActive(true);
+                for (int i = 0, x = 150; i < x; i++)
+                {
+                    imgPerfect.transform.Translate(Vector3.up);
+                    imgPerfect.color = new Color(imgColor.r, imgColor.g, imgColor.b, (255f - i) / 255f);
+                    yield return new WaitForSeconds(1f / x);
+                }
+                imgPerfect.gameObject.SetActive(false);
+                imgPerfect.transform.position = imgPos;
+            }
         }
 
         #endregion

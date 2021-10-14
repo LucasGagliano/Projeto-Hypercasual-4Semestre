@@ -1,32 +1,74 @@
-using System;
-using System.Collections;
-using Game.S.Scripts.Controladores;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class ControladorGameOver : MonoBehaviour
+namespace Game.S.Scripts.Controladores
 {
-    [SerializeField] private Text txtPontos;
-    [SerializeField] private Text txtHighscore;
-    [SerializeField] private ControladorIngredientes controladorIngredientes;
-    // Fazer checagem
-    
-    private void Start()
-    {
-        StartCoroutine(AtualizarPontos());
-    }
+    using System;
+    using System.Collections;
+    using UnityEngine;
+    using UnityEngine.UI;
 
-    private IEnumerator AtualizarPontos()
+    public class ControladorGameOver : MonoBehaviour
     {
-        if (controladorIngredientes.Pontos > PlayerPrefs.GetInt("Highscore"))
-            PlayerPrefs.SetInt("Highscore", controladorIngredientes.Pontos);
-        
-        for (var i = 0; i < controladorIngredientes.Pontos; i++)
+        [SerializeField] private Text txtPontos;
+        [SerializeField] private Text txtHighscore;
+        [SerializeField] private Image imgNew;
+        [SerializeField] private ControladorIngredientes controladorIngredientes;
+
+        private Animator _animator;
+        private bool _encontrouTxtPontos, _encontrouTxtHighscore, _encontrouImgNew, _encontrouControladorIngredientes, _encontrouAnimator;
+
+        private void Awake()
         {
-            txtPontos.text = (Convert.ToInt32(txtPontos.text) + 1).ToString();
-            yield return new WaitForSeconds(0.25f);
+            _animator = GetComponent<Animator>();
         }
 
-        txtHighscore.text = PlayerPrefs.GetInt("Highscore").ToString();
+        private void Start()
+        {
+            _encontrouTxtPontos = txtPontos != null;
+            _encontrouTxtHighscore = txtHighscore != null;
+            _encontrouImgNew = imgNew != null;
+            _encontrouControladorIngredientes = controladorIngredientes != null;
+            _encontrouAnimator = _animator != null;
+            
+            StartCoroutine(AtualizarPontos());
+        }
+        private void OnEnable()
+        {
+
+        }
+
+        private IEnumerator AtualizarPontos()
+        {
+            var pontos = 0;
+
+            if (_encontrouAnimator)
+                yield return new WaitForSeconds(_animator.speed);
+            
+            if (_encontrouControladorIngredientes)
+            {
+                pontos = controladorIngredientes.Pontos;
+
+                if (controladorIngredientes.Pontos > PlayerPrefs.GetInt("Highscore"))
+                {
+                    PlayerPrefs.SetInt("Highscore", controladorIngredientes.Pontos);
+
+                    if (_encontrouImgNew)
+                        imgNew.gameObject.SetActive(true);
+                }
+            }
+            
+            for (var i = 0; i < pontos; i++)
+            {
+                if (_encontrouTxtPontos)
+                    txtPontos.text = (Convert.ToInt32(txtPontos.text) + 1).ToString();
+                yield return new WaitForSeconds(0.15f);
+            }
+
+            for (var i = 0; i < PlayerPrefs.GetInt("Highscore"); i++)
+            {
+                if (_encontrouTxtHighscore)
+                    txtHighscore.text = (Convert.ToInt32(txtHighscore.text) + 1).ToString();
+                
+                yield return new WaitForSeconds(0.15f);
+            }
+        }
     }
 }
