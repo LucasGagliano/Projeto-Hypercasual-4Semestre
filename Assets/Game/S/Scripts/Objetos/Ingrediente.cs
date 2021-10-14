@@ -46,7 +46,7 @@ namespace Game.S.Scripts.Objetos
             if (_controladorIngredientes.EncontrouIngredienteInstanciado && gameObject == _controladorIngredientes.IngredienteInstanciado.gameObject && _controladorIngredientes.PodeGerarPerfect)
             {
                 _controladorIngredientes.PodeGerarPerfect = false;
-                _controladorIngredientes.DetectarPerfect();
+                StartCoroutine(_controladorIngredientes.DetectarPerfect());
             }
 
             if (_controladorIngredientes.PodeInstanciarIngrediente)
