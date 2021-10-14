@@ -11,8 +11,8 @@ namespace Editor.S.Scripts.CustomEditors
 
         #region Variáveis Privadas
 
-        private SerializedProperty _timer, _ingredientes, _pendulo, _posicaoSpawn, _painel, _offsetPerfect;
-        private bool _encontrouTimer, _encontrouIngredientes, _encontrouPendulo, _encontrouPosicaoSpawn, _encontrouPainel, _encontrouOffsetPerfect;
+        private SerializedProperty _timer, _ingredientes, _pendulo, _posicaoSpawn, _painel, _offsetPerfect, _imgPerfect;
+        private bool _encontrouTimer, _encontrouIngredientes, _encontrouPendulo, _encontrouPosicaoSpawn, _encontrouPainel, _encontrouOffsetPerfect, _encontrouImgPerfect;
 
         #endregion
 
@@ -44,6 +44,9 @@ namespace Editor.S.Scripts.CustomEditors
             if (_encontrouOffsetPerfect)
                 EditorGUILayout.PropertyField(_offsetPerfect, new GUIContent("Offset para perfect:"));
 
+            if (_encontrouImgPerfect)
+                EditorGUILayout.PropertyField(_imgPerfect, new GUIContent("Imagem perfect"));
+
             serializedObject.ApplyModifiedProperties();
         }
 
@@ -59,6 +62,7 @@ namespace Editor.S.Scripts.CustomEditors
             _timer = serializedObject.FindProperty("timer");
             _painel = serializedObject.FindProperty("painel");
             _offsetPerfect = serializedObject.FindProperty("offsetPerfect");
+            _imgPerfect = serializedObject.FindProperty("imgPerfect");
 
             _encontrouIngredientes = _ingredientes != null;
             _encontrouPendulo = _pendulo != null;
@@ -66,6 +70,7 @@ namespace Editor.S.Scripts.CustomEditors
             _encontrouTimer = _timer != null;
             _encontrouPainel = _painel != null;
             _encontrouOffsetPerfect = _offsetPerfect != null;
+            _encontrouImgPerfect = _imgPerfect != null;
         }
 
         #endregion
