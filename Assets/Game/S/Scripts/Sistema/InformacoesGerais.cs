@@ -8,8 +8,7 @@ namespace Game.S.Scripts.Sistema
         public const string SomGroupName = "Sons";
 
         public static bool MusicaInstanciada;
-        public static bool MusicaMutada;
-        public static bool SomMutado;
+        public static bool[] SonsMutados = new bool[2];
 
         public static GameObject MusicaObjeto;
     }
