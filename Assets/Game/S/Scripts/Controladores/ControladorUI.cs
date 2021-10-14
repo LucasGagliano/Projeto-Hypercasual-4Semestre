@@ -60,7 +60,7 @@ namespace Game.S.Scripts.Controladores
                 for (int j = 0, x = 200; j < x; j++)
                 {
                     txtTimer.color = new Color(cor.r, cor.g, cor.b, (255f - j) / 255f);
-                    yield return new WaitForSeconds(0.75f / x);
+                    yield return new WaitForSeconds(0.5f / x);
                 }
             }
             imgTimer.gameObject.SetActive(false);
