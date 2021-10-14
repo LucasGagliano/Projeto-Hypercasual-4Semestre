@@ -1,6 +1,5 @@
 namespace Game.S.Scripts.Controladores
 {
-    using System;
     using System.Collections;
     using System.Globalization;
     using UnityEngine;
@@ -58,10 +57,10 @@ namespace Game.S.Scripts.Controladores
             for (var i = 3; i > 0; i--)
             {
                 txtTimer.text = i.ToString(CultureInfo.CurrentCulture);
-                for (int j = 0, x = 150; j < x; j++)
+                for (int j = 0, x = 200; j < x; j++)
                 {
                     txtTimer.color = new Color(cor.r, cor.g, cor.b, (255f - j) / 255f);
-                    yield return new WaitForSeconds(1.3f / x);
+                    yield return new WaitForSeconds(0.75f / x);
                 }
             }
             imgTimer.gameObject.SetActive(false);
